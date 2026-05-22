@@ -26,7 +26,7 @@ public sealed class BuildWindowsTask : FrostingTask<BuildContext>
         context.StartProcess("cmake", new ProcessSettings
         {
             WorkingDirectory = buildWorkingDir,
-            Arguments = $"-G \"Visual Studio 17 2022\" -A {architecture} -DMGSTB_BUILD_SHARED=ON .."
+            Arguments = $"-A {architecture} -DMGSTB_BUILD_SHARED=ON .."
         });
 
         context.StartProcess("cmake", new ProcessSettings
