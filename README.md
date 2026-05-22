@@ -1,0 +1,1 @@
+This package contains native libraries for Stb built for usage with MonoGame.
